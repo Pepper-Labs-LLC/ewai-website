@@ -7,17 +7,164 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
   <header>
-    <span class="app-name">Ew AI</span>
-    <nav class="tabs">
-      <a href="../support/" class="tab active">Support</a>
-      <a href="../privacy/" class="tab">Privacy</a>
-    </nav>
+    <div class="header-inner">
+      <span class="app-name">Ew <span>AI</span></span>
+      <nav class="tabs">
+        <a href="../support/" class="tab active">Support</a>
+        <a href="../privacy/" class="tab">Privacy</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h1>Support</h1>
-    <p>Have a question or need help? We're happy to hear from you.</p>
-    <p>Email us at <a href="mailto:pepperlabs8@gmail.com" class="email">pepperlabs8@gmail.com</a></p>
-  </main>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <span class="hero-label">Support</span>
+      <h1>How can we help?</h1>
+      <p>Everything you need to know about using Ew AI — from getting started to fixing common issues.</p>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- How It Works -->
+    <div class="section">
+      <div class="section-label">Getting Started</div>
+      <h2>How Ew AI Works</h2>
+      <p>Ew AI uses AI to transform photos of food into deliberately revolting versions of themselves — a dark, comedic way to make unhealthy eating a little less appealing.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Take or select a photo</h3>
+            <p>Tap the photo zone on the home screen. You can snap a fresh photo with your camera or choose an existing image from your photo library. Hit "Retake" anytime if you're not happy with the shot.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Tap "Disgust Me"</h3>
+            <p>Once your food photo is loaded, tap the button to start the analysis. Our AI will identify what you're eating, estimate the calories, and craft a uniquely revolting transformation just for that food.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Face your food</h3>
+            <p>The results screen shows a side-by-side BEFORE / AFTER comparison with the food's real name, its new disgusting name, a calorie count, and a description of everything wrong with what you're about to eat.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3>Share the horror</h3>
+            <p>Tap the share button to save or send a composite image of the before/after — perfect for TikTok, Instagram, or sending to friends who need a reality check about their lunch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section">
+      <div class="section-label">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+
+        <div class="faq-item">
+          <h3>Why didn't the app recognize my food?</h3>
+          <p>Ew AI uses GPT-4o to analyze your photo, so image quality matters. Make sure the food is well-lit and clearly visible in the frame. Avoid heavily blurred, far-away, or dimly lit shots. If the food takes up most of the photo, results are usually much better.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>The generated image doesn't look very disgusting — why?</h3>
+          <p>The transformation depends on the type of food. Some foods produce more dramatic results than others — meats and fried foods typically get the most extreme makeovers, while simple fruits or vegetables may produce subtler transformations. Try different foods to see what gets the most horrifying results.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How accurate is the calorie estimate?</h3>
+          <p>Calorie counts are estimates based on a typical serving of the identified food. They're meant to be informative, not clinical — think of them as a ballpark figure. For precise tracking, use a dedicated nutrition app alongside Ew AI.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does the analysis take?</h3>
+          <p>Processing typically takes 10–30 seconds, depending on your internet connection. First, the AI analyzes your food (a few seconds), then generates the disgusting image (which takes the most time). You'll see fun status messages while you wait.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does the app need camera and photo library access?</h3>
+          <p>Camera access lets you take a live photo of your food. Photo library access lets you pick an existing photo. Neither permission is used for anything else — photos are processed for analysis and immediately discarded. We never store your photos.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use Ew AI on my iPad?</h3>
+          <p>Yes — Ew AI supports both iPhone and iPad. The layout adapts to larger screens, and the share sheet is optimized for iPad's popover style.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does Ew AI work offline?</h3>
+          <p>No. The food analysis and image generation both rely on AI APIs that require an active internet connection. Make sure you have a stable Wi-Fi or cellular connection for the best experience.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I save the transformed image to my camera roll?</h3>
+          <p>Yes. Tap the share button on the results screen and choose "Save Image." This saves a composite BEFORE/AFTER image directly to your Photos app.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Troubleshooting -->
+    <div class="section">
+      <div class="section-label">Troubleshooting</div>
+      <h2>Common Issues</h2>
+      <div class="trouble-list">
+
+        <div class="trouble-item">
+          <h3>The app shows an error after scanning</h3>
+          <p>This is usually a network issue. Check your internet connection and try again. If the problem persists, restart the app and attempt a new scan. Make sure the food is clearly visible in the photo — a very dark or blurry image can occasionally cause the analysis to fail.</p>
+        </div>
+
+        <div class="trouble-item">
+          <h3>Image generation is taking a very long time</h3>
+          <p>AI image generation can be slow on weak connections. If it's been more than a minute with no result, exit to the home screen and try again with a fresh photo. Moving to a stronger Wi-Fi connection almost always helps.</p>
+        </div>
+
+        <div class="trouble-item">
+          <h3>The share button isn't working</h3>
+          <p>Make sure you're on the results screen after a completed analysis. On iPad, the share sheet appears as a popover — if it doesn't appear, try tapping the button again. If sharing still fails, try saving to your camera roll and sharing from the Photos app instead.</p>
+        </div>
+
+        <div class="trouble-item">
+          <h3>Camera or photo access is denied</h3>
+          <p>If you previously denied the permission request, go to Settings → Privacy & Security → Camera (or Photos) → Ew AI, and toggle access on. The app can't function without it.</p>
+        </div>
+
+        <div class="trouble-item">
+          <h3>The app crashed or froze</h3>
+          <p>Force-quit the app by swiping it away from the app switcher, then reopen it. If crashes happen repeatedly, try reinstalling the app. If the issue continues, reach out to us with a description of what you were doing when it crashed.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+      <div class="section-label">Contact</div>
+      <h2>Still need help?</h2>
+      <div class="contact-card">
+        <p>We read every message and typically respond within a day or two. Include as much detail as you can — what device you're using, what happened, and any steps you've already tried.</p>
+        <a href="mailto:pepperlabs8@gmail.com" class="email-link">
+          Email pepperlabs8@gmail.com
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Pepper Labs &nbsp;&middot;&nbsp; <a href="../privacy/">Privacy Policy</a></p>
+  </footer>
+
 </body>
 </html>
